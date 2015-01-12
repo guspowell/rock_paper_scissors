@@ -24,11 +24,8 @@ class RPS < Sinatra::Base
     player = Player.new
     @choice = player.pick_option(params[:choice])
 
-  
     @comp_choice = Computer.comp_choice(options)  
     @outcome = Outcome.outcome(player,computer)
-
-    puts @comp_choice
 
     erb :outcome
   end
