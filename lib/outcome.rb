@@ -1,8 +1,6 @@
 class Outcome
 
 	def win (player, computer)
-		p player
-		p computer
 		true if (player.choice == :rock and computer.choice == :scissors) || (player.choice == :paper and computer.choice == :rock) || (player.choice == :scissors and computer.choice == :paper)
 	end
 
@@ -11,15 +9,17 @@ class Outcome
 	end
 
 	def draw (player, computer)
-		true if player.choice == :scissors and computer.choice == :scissors
-		true if player.choice == :rock and computer.choice == :rock
-		true if player.choice == :paper and computer.choice == :paper
+		true if (player.choice == :scissors and computer.choice == :scissors) || (player.choice == :rock and computer.choice == :rock) || (player.choice == :paper and computer.choice == :paper)
 	end
 
 	def outcome(player,computer)
-		'Win' if win(player,computer) == true
-		'Lose' if lose(player,computer) == true
-		'Draw' if draw(player,computer) == true
+		if self.win(player,computer) == true
+			'Win'
+		elsif self.lose(player,computer) == true
+			'Lose'
+		else self.draw(player,computer) == true
+			'Draw'
+		end
 	end
 
 

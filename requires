@@ -6,3 +6,6 @@ player = Player.new
 options = Options.new
 computer = Computer.new
 outcome = Outcome.new
+
+player.pick_option(:rock)
+computer.comp_choice(options)
