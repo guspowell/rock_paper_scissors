@@ -20,19 +20,20 @@ class RPS < Sinatra::Base
   end
 
   get '/choice' do
-    player = session[:me]
-    @choice = player.pick_option(:rock)
-    puts @choice
-    puts session.inspect
     erb :choice
   end
 
   get '/outcome' do
-    outcome = Outcome.new
+    player = session[:me]
+    @choice = player.pick_option(params[:choice])
+
     computer = Computer.new
     @comp_choice = computer.comp_choice(options)
-    player = session[:me]
+    puts @comp_choice
+    
+    outcome = Outcome.new
     @outcome = outcome.outcome(player,computer)
+
     erb :outcome
   end
 

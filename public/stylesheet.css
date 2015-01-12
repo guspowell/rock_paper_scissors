@@ -1,0 +1,73 @@
+body {
+	font-family: helvetica
+}
+
+.circle {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 70px;
+	background-color: black;
+	height: 650px;
+	width: 650px;
+	border-radius: 50%;
+}
+
+.header {
+	font-family: Verdana;
+	text-align: center;
+	color: white;
+	padding-top: 200px;
+	font-size: 50px;
+}
+
+.name_form {
+	text-align: center;
+	padding-top: 50px;
+	color: grey;
+	font-size: 15px;
+}
+
+.form {
+	color: red;
+	text-align: center;
+}
+
+.jumbotron {
+	text-align: center;
+	margin-top: 20%;
+}
+
+.rock {
+	display: inline;
+}
+
+.paper {
+	display: inline;
+}
+
+.scissors {
+	display: inline;
+}
+
+.player_choice {
+	display: inline;
+}
+
+.computer_choice {
+	display: inline;
+}
+
+.win_lose {
+	display: inline;
+}
+
+.play_again {
+	display: inline;
+}
+
+
+.vs {
+	text-align: center;
+	margin-top: 20%;
+}
+

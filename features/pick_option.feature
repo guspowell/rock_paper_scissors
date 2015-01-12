@@ -11,4 +11,4 @@ Feature: Picking an option
 	Scenario: Clicking Rock
 		Given I am on the choice page
 		When I click "Rock"
-		Then I should see "You Lose"
+		Then I should see "You Lose" or "You Win" or "Draw"

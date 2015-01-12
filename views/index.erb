@@ -1,12 +1,25 @@
-<div>
-  <% if @name %>
-  	<%= "Welcome #{@name}" %>
-  	<br><a href="choice">Play Game</a>
-  <% else %>
- 	 <form action="/">
-    	What's your name?
-    	<input type="text" name="name">
-	    <input type="submit" value="submit">
-  	</form>
-  <% end %>
+<div class="circle">
+
+<div class="header">
+	ROCK<br>PAPER<br>SCISSORS
 </div>
+
+
+
+	<div class="name_form">
+	  <% if @name %>
+	  	<%= "Welcome #{@name}" %>
+	  	<br><a href="choice">Play Game</a>
+	  <% else %>
+	 		<form action="/">
+	    	Please enter your name
+	    	<br>
+	    	<br>
+	    	<input type="text" name="name">
+		    <input type="submit" value="submit">
+	  	</form>
+	  <% end %>
+	</div>
+
+</div>
+

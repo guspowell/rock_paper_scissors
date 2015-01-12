@@ -1,3 +1,38 @@
 <div class="outcome">
-	You Lose
+
+<div class="vs">
+		<div class="player_choice">
+		<% if @choice == :rock %>
+			<img src= "/images/rock.jpg">
+		<% elsif @choice == :paper %>
+			<img src= "/images/paper.jpg">
+		<% else @choice == :scissors %>
+			<img src= "/images/scissors.jpg">
+		<% end %>
+	</div>
+
+	<div class="computer_choice">
+		<% if @comp_choice == :rock %>
+			<img src= "/images/rock.jpg">
+		<% elsif @comp_choice == :paper %>
+			<img src= "/images/paper.jpg">
+		<% else @comp_choice == :scissors %>
+			<img src= "/images/scissors.jpg">
+		<% end %>
+	</div>
+
+	<div class="win_lose">
+		<% if @outcome == 'Win' %>
+			<img src= "/images/win.jpg">
+		<% elsif @outcome == 'Lose' %>
+			<img src= "/images/lose.jpg">
+		<% else @outcome == 'Draw' %>
+			<img src= "/images/draw.jpg">
+		<% end %>
+	</div>
+
+	<div class="play_again">
+			<a href="choice"><img src= "/images/play_again.jpg"></a>
+	</div>
+	
 </div>
