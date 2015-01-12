@@ -25,7 +25,7 @@ class RPS < Sinatra::Base
     @choice = player.pick_option(params[:choice])
 
     @comp_choice = Computer.comp_choice(options)  
-    @outcome = Outcome.outcome(player,computer)
+    @outcome = Outcome.outcome(player,Computer)
 
     erb :outcome
   end
