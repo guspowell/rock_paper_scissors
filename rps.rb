@@ -13,9 +13,6 @@ class RPS < Sinatra::Base
 
   get '/' do
     @name= params[:name]
-    player = Player.new
-    session[:me] = player
-    player.name (@name)
     erb :index
   end
 
@@ -24,15 +21,14 @@ class RPS < Sinatra::Base
   end
 
   get '/outcome' do
-    player = session[:me]
+    player = Player.new
     @choice = player.pick_option(params[:choice])
 
-    computer = Computer.new
-    @comp_choice = computer.comp_choice(options)
+  
+    @comp_choice = Computer.comp_choice(options)  
+    @outcome = Outcome.outcome(player,computer)
+
     puts @comp_choice
-    
-    outcome = Outcome.new
-    @outcome = outcome.outcome(player,computer)
 
     erb :outcome
   end

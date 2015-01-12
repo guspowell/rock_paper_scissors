@@ -5,7 +5,7 @@ Feature: Starting a game
 
 	Scenario: Visiting homepage
 		Given I am on the homepage
-		Then I should see "What's your name?"
+		Then I should see "Please enter your name"
 
 	Scenario: Entering name
 		Given I am on the homepage
