@@ -1,0 +1,8 @@
+require "./lib/player.rb"
+require "./lib/options.rb"
+require "./lib/computer.rb"
+require "./lib/outcome.rb"
+player = Player.new
+options = Options.new
+computer = Computer.new
+outcome = Outcome.new

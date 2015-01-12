@@ -33,3 +33,8 @@ randomly gen choice   choices, comp
 
 OUTCOME
 win or lose    player, choices, comp, outcome
+
+
+ROCK > SCISSORS
+SCISSORS > PAPER
+PAPER > ROCK
