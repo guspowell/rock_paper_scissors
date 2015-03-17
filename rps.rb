@@ -10,6 +10,7 @@ class RPS < Sinatra::Base
   enable :sessions
 
   options = Options.new
+  computer = Computer.new
 
   get '/' do
     @name= params[:name]
@@ -23,10 +24,8 @@ class RPS < Sinatra::Base
   get '/outcome' do
     player = Player.new
     @choice = player.pick_option(params[:choice])
-
-    @comp_choice = Computer.comp_choice(options)  
-    @outcome = Outcome.outcome(player,Computer)
-
+    @comp_choice = computer.comp_choice(options)
+    @outcome = Outcome.new.outcome(player,computer)
     erb :outcome
   end
 

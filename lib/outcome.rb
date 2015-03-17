@@ -1,12 +1,12 @@
 class Outcome
 
-	def self.win?(player, computer)
+	def win?(player, computer)
 		(player.choice == :rock and computer.choice == :scissors) ||
 		(player.choice == :paper and computer.choice == :rock) ||
 		(player.choice == :scissors and computer.choice == :paper)
 	end
 
-	def self.outcome(player,computer)
+	def outcome(player,computer)
 		if (player.choice == computer.choice)
 			"Draw"
 		elsif win?(player,computer)
@@ -15,6 +15,5 @@ class Outcome
 			'Lose'
 		end
 	end
-
 
 end
