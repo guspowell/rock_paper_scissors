@@ -1,0 +1,20 @@
+.outcome .player_choice {
+	display: inline;
+}
+
+.outcome .computer_choice {
+	display: inline;
+}
+
+.outcome .win_lose {
+	display: inline;
+}
+
+.outcome .play_again {
+	display: inline;
+}
+
+.outcome .vs {
+	text-align: center;
+	margin-top: 20%;
+}

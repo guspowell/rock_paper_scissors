@@ -1,0 +1,12 @@
+.jumbotron {
+	text-align: center;
+	margin-top: 20%;
+}
+
+#option {
+	display: inline;
+}
+
+#option:hover {
+	opacity: 0.5;
+}
