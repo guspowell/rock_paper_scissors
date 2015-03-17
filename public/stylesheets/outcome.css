@@ -1,17 +1,17 @@
-.outcome .player_choice {
-	display: inline;
+.outcome .player-choice {
+	display: none;
 }
 
-.outcome .computer_choice {
-	display: inline;
+.outcome .computer-choice {
+	display: none;
 }
 
-.outcome .win_lose {
-	display: inline;
+.outcome .win-lose {
+	display: none;
 }
 
-.outcome .play_again {
-	display: inline;
+.outcome #option.play-again {
+	display: none;
 }
 
 .outcome .vs {

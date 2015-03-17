@@ -1,7 +1,7 @@
 <div class="outcome">
 
 <div class="vs">
-		<div class="player_choice">
+		<div class="player-choice">
 		<% if @choice == :rock %>
 			<img src= "/images/rock.jpg">
 		<% elsif @choice == :paper %>
@@ -11,7 +11,7 @@
 		<% end %>
 	</div>
 
-	<div class="computer_choice">
+	<div class="computer-choice">
 		<% if @comp_choice == :rock %>
 			<img src= "/images/rock.jpg">
 		<% elsif @comp_choice == :paper %>
@@ -21,7 +21,7 @@
 		<% end %>
 	</div>
 
-	<div class="win_lose">
+	<div class="win-lose">
 		<% if @outcome == 'Win' %>
 			<img src= "/images/win.jpg">
 		<% elsif @outcome == 'Lose' %>
@@ -31,7 +31,7 @@
 		<% end %>
 	</div>
 
-	<div id="option" class="play_again">
+	<div id="option" class="play-again">
 			<a href="choice"><img src= "/images/play_again.jpg"></a>
 	</div>
 
