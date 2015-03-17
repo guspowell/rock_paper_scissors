@@ -10,6 +10,7 @@ class Outcome
 		if (player.choice == computer.choice)
 			"Draw"
 		elsif win?(player,computer)
+			player.score
 			'Win'
 		else
 			'Lose'

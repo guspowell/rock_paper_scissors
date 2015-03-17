@@ -13,21 +13,32 @@ body {
 }
 
 .header {
-	font-family: Verdana;
-	text-align: center;
+	font-family: helvetica;
 	color: white;
-	padding-top: 200px;
-	font-size: 50px;
+	font-size: 70px;
+	position: absolute;
+	top: 250px;
+	left: 550px;
 }
 
-.name_form {
-	text-align: center;
-	padding-top: 50px;
+.name-form {
+	margin-top: 0;
+	margin-left: 2px;
+	display: none;
+}
+
+.name-form input[type="text"] {
+	width: 350px;
+	border-bottom: 1px dashed white;
+	border-left: none;
+	border-right: none;
+	border-top: none;
+	background-color: transparent;
 	color: grey;
-	font-size: 15px;
+	font-size: 0.5em;
+	outline:none;
 }
 
-.form {
-	color: red;
-	text-align: center;
+.name-form input[type="submit"] {
+	display: none;
 }

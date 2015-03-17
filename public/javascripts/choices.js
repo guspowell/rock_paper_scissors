@@ -8,4 +8,7 @@ $(document).ready(function() {
     }).css('display','inline');
   }).css('display','inline');
 
+
+  $('.name-form').fadeIn(2000);
+
 });
