@@ -18,3 +18,33 @@
 	text-align: center;
 	margin-top: 20%;
 }
+
+.score {
+  margin: 0;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.score h2 {
+  font-size: 50px;
+  display: inline-block;
+}
+
+.score #score {
+  font-size: 80px;
+  display: inline-block;
+}
+
+.score .player-score {
+  display: inline-block;
+  color: #e41a6a;
+}
+
+.score .comp-score {
+  display: inline-block;
+  color: #f1831d;
+}
+
+.score #name {
+  color: #393939
+}

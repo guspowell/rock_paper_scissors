@@ -20,6 +20,7 @@ class RPS < Sinatra::Base
     player = Player.new
     player.name(params[:name])
     session[:player] = player
+    session[:computer] = computer
     redirect to('/choice')
   end
 
@@ -29,13 +30,15 @@ class RPS < Sinatra::Base
 
   get '/outcome' do
     player = session[:player]
-    p session[:player]
+    computer = session[:computer]
     @name = player.player_name
     @choice = player.pick_option(params[:choice])
     @comp_choice = computer.comp_choice(options)
     @outcome = Outcome.new.outcome(player,computer)
     @player_score = player.total_score
+    @comp_score = computer.total_score
     session[:player] = player
+    session[:computer] = computer
     erb :outcome
   end
 

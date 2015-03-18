@@ -39,9 +39,11 @@
 
 <div class="score">
 	<div class="player-score">
-		<h2><%= @name %></h2>
-		<%= @player_score %>
+		<h2 id="name"><%= @name %></h2>
+		<h2 id="score"><%= @player_score %></h2>
 	</div>
 	<div class="comp-score">
+		<h2 id="score"><%= @comp_score %></h2>
+		<h2 id="name">cpu</h2>
 	</div>
 </div>

@@ -9,6 +9,6 @@ $(document).ready(function() {
   }).css('display','inline');
 
 
-  $('.name-form').fadeIn(2000);
+  $('.name-form').fadeIn(1000);
 
 });

@@ -13,6 +13,7 @@ class Outcome
 			player.score
 			'Win'
 		else
+			computer.score
 			'Lose'
 		end
 	end

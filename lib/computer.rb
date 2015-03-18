@@ -1,9 +1,9 @@
 class Computer
 
-	attr_reader :choice
+	attr_reader :choice, :total_score
 
 	def initialize
-		@score = 0
+		@total_score = 0
 	end
 
 	def comp_choice (options)
@@ -11,7 +11,7 @@ class Computer
 	end
 
 	def score
-		@score += 1
+		@total_score += 1
 	end
 
 end
