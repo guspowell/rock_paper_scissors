@@ -10,7 +10,6 @@ class RPS < Sinatra::Base
   enable :sessions
 
   options = Options.new
-  computer = Computer.new
 
   get '/' do
     erb :index
@@ -18,6 +17,7 @@ class RPS < Sinatra::Base
 
   post '/name' do
     player = Player.new
+    computer = Computer.new
     player.name(params[:name])
     session[:player] = player
     session[:computer] = computer
