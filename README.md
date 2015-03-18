@@ -15,7 +15,7 @@ Screenshot
 ![SCREEN_SHOT](./public/images/rpsscreenshot.png)
 
 
-Languages - Frameworks - Tools
+Technologies Used
 --------------------------------
 
 - Ruby
@@ -26,4 +26,4 @@ Languages - Frameworks - Tools
 
 Enhancements
 ------------------
-One enhancement could be to add multiplayer functionality.
+[ ] One enhancement could be to add multiplayer functionality.
