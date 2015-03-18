@@ -1,40 +1,29 @@
-FRIDAY MORNING LECTURE
+#Rock Paper Scissors
 
-BUILD AS MVP!! => player picks from one option, and always wins => add options and loss => add draw
-Start with user stories
+Introduction
+--------------------
+In this week 3 weekend challenge at Makers we were given the task of recreating the classic Rock Paper Scissors game in the browser, using Ruby and Sinatra.
 
-Starting place:
-what will we see on first page?
-		could have drawing of rock, paper, scissors buttons
-		leeds onto new page or refreshes current page when button is clicked
-		picture of computer's choice, and you LOSE or WIN or DRAW
-		play again
-
-Feature: Playing RPS => test drive the project: CUCUMBER AND RSPEC
-
-the marketeer has to enter their name before the game
-the marketeer will be presented the choices (rock, paper and scissors)
-the marketeer can choose one option
-the game will choose a random option
-a winner will be declared
-
-CLASSES: player, choices, computer, outcome
-
-PLAYER
-enter name     player
-pick option    choices, player
-win or lose    outcome, player
-
-CHOICES
-list choices   choices
-
-COMP
-randomly gen choice   choices, comp
-
-OUTCOME
-win or lose    player, choices, comp, outcome
+Link
+---------------
+The final app can be viewed here: [http://gus-rps.herokuapp.com/](http://gus-rps.herokuapp.com/)
 
 
-ROCK > SCISSORS
-SCISSORS > PAPER
-PAPER > ROCK
+Screenshot
+---------------
+
+![SCREEN_SHOT](./public/images/rpsscreenshot.png)
+
+
+Languages - Frameworks - Tools
+--------------------------------
+
+- Ruby
+- Sinatra,
+- JavaScript,
+- JQuery,
+- CSS
+
+Enhancements
+------------------
+One enhancement could be to add multiplayer functionality.
