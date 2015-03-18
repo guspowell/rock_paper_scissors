@@ -26,4 +26,4 @@ Technologies Used
 
 Enhancements
 ------------------
-[ ] One enhancement could be to add multiplayer functionality.
+- [ ] One enhancement could be to add multiplayer functionality.
