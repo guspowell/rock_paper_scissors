@@ -16,9 +16,9 @@ body {
 	font-family: helvetica;
 	color: white;
 	font-size: 70px;
-	position: absolute;
-	top: 250px;
-	left: 550px;
+	position: relative;
+	top: 180px;
+	left: 25%;
 }
 
 .name-form {
@@ -34,7 +34,7 @@ body {
 	border-right: none;
 	border-top: none;
 	background-color: transparent;
-	color: grey;
+	color: #e41a6a;
 	font-size: 0.5em;
 	outline:none;
 }
