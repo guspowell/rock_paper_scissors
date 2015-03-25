@@ -40,6 +40,11 @@
   color: #e41a6a;
 }
 
+.score #hifen {
+	font-size: 80px;
+	color: #393939;
+}
+
 .score .comp-score {
   display: inline-block;
   color: #f1831d;
